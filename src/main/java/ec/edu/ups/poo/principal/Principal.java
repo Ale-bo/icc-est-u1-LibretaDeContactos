@@ -9,6 +9,14 @@ public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+
+        Persona persona = new Persona();
+        persona.setCedula("1010");
+        persona.setNombre("Pablo");
+        persona.setApellido("Patrick");
+        persona.setDireccion("Madrid");
+
+
         System.out.println("Ingrese la cantidad de personas:");
         int nPersonas = scanner.nextInt();
         scanner.nextLine();

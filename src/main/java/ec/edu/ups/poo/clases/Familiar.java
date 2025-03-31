@@ -11,16 +11,18 @@ public class Familiar extends Persona {
     /**
      * Constructor vacío que permite crear un familiar sin inicializar sus atributos.
      */
-    public Familiar() { }
+    public Familiar() {
+    }
 
     /**
      * Constructor que inicializa los atributos del familiar con valores dados.
-     * @param cedula Número de identificación de la persona.
-     * @param nombre Nombre de la persona.
-     * @param apellido Apellido de la persona.
-     * @param direccion Dirección de residencia de la persona.
-     * @param parentesco Relación de parentesco con la persona principal.
-     * @param tipoDeSangre Tipo de sangre del familiar.
+     *
+     * @param cedula            Número de identificación de la persona.
+     * @param nombre            Nombre de la persona.
+     * @param apellido          Apellido de la persona.
+     * @param direccion         Dirección de residencia de la persona.
+     * @param parentesco        Relación de parentesco con la persona principal.
+     * @param tipoDeSangre      Tipo de sangre del familiar.
      * @param fechaDeNacimiento Fecha de nacimiento del familiar.
      */
     public Familiar(String cedula, String nombre, String apellido, String direccion,
@@ -33,6 +35,7 @@ public class Familiar extends Persona {
 
     /**
      * Obtiene el parentesco del familiar.
+     *
      * @return Tipo de parentesco.
      */
     public String getParentesco() {
@@ -41,6 +44,7 @@ public class Familiar extends Persona {
 
     /**
      * Establece el parentesco del familiar.
+     *
      * @param parentesco Tipo de parentesco.
      */
     public void setParentesco(String parentesco) {
@@ -49,6 +53,7 @@ public class Familiar extends Persona {
 
     /**
      * Obtiene el tipo de sangre del familiar.
+     *
      * @return Tipo de sangre.
      */
     public String getTipoDeSangre() {
@@ -57,6 +62,7 @@ public class Familiar extends Persona {
 
     /**
      * Establece el tipo de sangre del familiar.
+     *
      * @param tipoDeSangre Tipo de sangre.
      */
     public void setTipoDeSangre(String tipoDeSangre) {
@@ -65,6 +71,7 @@ public class Familiar extends Persona {
 
     /**
      * Obtiene la fecha de nacimiento del familiar.
+     *
      * @return Fecha de nacimiento.
      */
     public GregorianCalendar getFechaDeNacimiento() {
@@ -73,6 +80,7 @@ public class Familiar extends Persona {
 
     /**
      * Establece la fecha de nacimiento del familiar.
+     *
      * @param fechaDeNacimiento Fecha de nacimiento.
      */
     public void setFechaDeNacimiento(GregorianCalendar fechaDeNacimiento) {
@@ -81,6 +89,7 @@ public class Familiar extends Persona {
 
     /**
      * Calcula la edad del familiar a partir de su fecha de nacimiento.
+     *
      * @return Edad en años. Si la fecha de nacimiento no está definida, devuelve -1.
      */
     public double calcularEdad() {
@@ -108,6 +117,7 @@ public class Familiar extends Persona {
 
     /**
      * Devuelve una representación en cadena del familiar con sus atributos.
+     *
      * @return Cadena con los datos del familiar.
      */
     @Override
@@ -117,4 +127,4 @@ public class Familiar extends Persona {
                 ",\n Tipo de Sangre: " + tipoDeSangre +
                 ",\n Edad: " + calcularEdad() + " años";
     }
-
+}

@@ -12,6 +12,7 @@ public class Persona {
         this.apellido = apellido;
         this.direccion = direccion;
     }
+// Metodo declaracion de variables
 
     public Persona() {
     }
